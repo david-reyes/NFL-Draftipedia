@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FA3B8D5230B47A1003E742A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B8D4230B47A1003E742A /* AppDelegate.swift */; };
+		9FA3B8D7230B47A1003E742A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B8D6230B47A1003E742A /* ViewController.swift */; };
+		9FA3B8DA230B47A1003E742A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA3B8D8230B47A1003E742A /* Main.storyboard */; };
+		9FA3B8DC230B47A2003E742A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA3B8DB230B47A2003E742A /* Assets.xcassets */; };
+		9FA3B8DF230B47A2003E742A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA3B8DD230B47A2003E742A /* LaunchScreen.storyboard */; };
+		9FA3B8EA230B47A2003E742A /* NFL_DraftipediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B8E9230B47A2003E742A /* NFL_DraftipediaTests.swift */; };
+		9FA3B8F5230B47A2003E742A /* NFL_DraftipediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B8F4230B47A2003E742A /* NFL_DraftipediaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FA3B8E6230B47A2003E742A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FA3B8C9230B47A1003E742A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FA3B8D0230B47A1003E742A;
+			remoteInfo = "NFL Draftipedia";
+		};
+		9FA3B8F1230B47A2003E742A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FA3B8C9230B47A1003E742A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FA3B8D0230B47A1003E742A;
+			remoteInfo = "NFL Draftipedia";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9FA3B8D1230B47A1003E742A /* NFL Draftipedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NFL Draftipedia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA3B8D4230B47A1003E742A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9FA3B8D6230B47A1003E742A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FA3B8D9230B47A1003E742A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9FA3B8DB230B47A2003E742A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FA3B8DE230B47A2003E742A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9FA3B8E0230B47A2003E742A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FA3B8E5230B47A2003E742A /* NFL DraftipediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NFL DraftipediaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA3B8E9230B47A2003E742A /* NFL_DraftipediaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFL_DraftipediaTests.swift; sourceTree = "<group>"; };
+		9FA3B8EB230B47A2003E742A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FA3B8F0230B47A2003E742A /* NFL DraftipediaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NFL DraftipediaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA3B8F4230B47A2003E742A /* NFL_DraftipediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFL_DraftipediaUITests.swift; sourceTree = "<group>"; };
+		9FA3B8F6230B47A2003E742A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FA3B8CE230B47A1003E742A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA3B8E2230B47A2003E742A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA3B8ED230B47A2003E742A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FA3B8C8230B47A1003E742A = {
+			isa = PBXGroup;
+			children = (
+				9FA3B8D3230B47A1003E742A /* NFL Draftipedia */,
+				9FA3B8E8230B47A2003E742A /* NFL DraftipediaTests */,
+				9FA3B8F3230B47A2003E742A /* NFL DraftipediaUITests */,
+				9FA3B8D2230B47A1003E742A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FA3B8D2230B47A1003E742A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FA3B8D1230B47A1003E742A /* NFL Draftipedia.app */,
+				9FA3B8E5230B47A2003E742A /* NFL DraftipediaTests.xctest */,
+				9FA3B8F0230B47A2003E742A /* NFL DraftipediaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FA3B8D3230B47A1003E742A /* NFL Draftipedia */ = {
+			isa = PBXGroup;
+			children = (
+				9FA3B8D4230B47A1003E742A /* AppDelegate.swift */,
+				9FA3B8D6230B47A1003E742A /* ViewController.swift */,
+				9FA3B8D8230B47A1003E742A /* Main.storyboard */,
+				9FA3B8DB230B47A2003E742A /* Assets.xcassets */,
+				9FA3B8DD230B47A2003E742A /* LaunchScreen.storyboard */,
+				9FA3B8E0230B47A2003E742A /* Info.plist */,
+			);
+			path = "NFL Draftipedia";
+			sourceTree = "<group>";
+		};
+		9FA3B8E8230B47A2003E742A /* NFL DraftipediaTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FA3B8E9230B47A2003E742A /* NFL_DraftipediaTests.swift */,
+				9FA3B8EB230B47A2003E742A /* Info.plist */,
+			);
+			path = "NFL DraftipediaTests";
+			sourceTree = "<group>";
+		};
+		9FA3B8F3230B47A2003E742A /* NFL DraftipediaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9FA3B8F4230B47A2003E742A /* NFL_DraftipediaUITests.swift */,
+				9FA3B8F6230B47A2003E742A /* Info.plist */,
+			);
+			path = "NFL DraftipediaUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FA3B8D0230B47A1003E742A /* NFL Draftipedia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FA3B8F9230B47A2003E742A /* Build configuration list for PBXNativeTarget "NFL Draftipedia" */;
+			buildPhases = (
+				9FA3B8CD230B47A1003E742A /* Sources */,
+				9FA3B8CE230B47A1003E742A /* Frameworks */,
+				9FA3B8CF230B47A1003E742A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NFL Draftipedia";
+			productName = "NFL Draftipedia";
+			productReference = 9FA3B8D1230B47A1003E742A /* NFL Draftipedia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FA3B8E4230B47A2003E742A /* NFL DraftipediaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FA3B8FC230B47A2003E742A /* Build configuration list for PBXNativeTarget "NFL DraftipediaTests" */;
+			buildPhases = (
+				9FA3B8E1230B47A2003E742A /* Sources */,
+				9FA3B8E2230B47A2003E742A /* Frameworks */,
+				9FA3B8E3230B47A2003E742A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FA3B8E7230B47A2003E742A /* PBXTargetDependency */,
+			);
+			name = "NFL DraftipediaTests";
+			productName = "NFL DraftipediaTests";
+			productReference = 9FA3B8E5230B47A2003E742A /* NFL DraftipediaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9FA3B8EF230B47A2003E742A /* NFL DraftipediaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FA3B8FF230B47A2003E742A /* Build configuration list for PBXNativeTarget "NFL DraftipediaUITests" */;
+			buildPhases = (
+				9FA3B8EC230B47A2003E742A /* Sources */,
+				9FA3B8ED230B47A2003E742A /* Frameworks */,
+				9FA3B8EE230B47A2003E742A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FA3B8F2230B47A2003E742A /* PBXTargetDependency */,
+			);
+			name = "NFL DraftipediaUITests";
+			productName = "NFL DraftipediaUITests";
+			productReference = 9FA3B8F0230B47A2003E742A /* NFL DraftipediaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FA3B8C9230B47A1003E742A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Matt;
+				TargetAttributes = {
+					9FA3B8D0230B47A1003E742A = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					9FA3B8E4230B47A2003E742A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 9FA3B8D0230B47A1003E742A;
+					};
+					9FA3B8EF230B47A2003E742A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 9FA3B8D0230B47A1003E742A;
+					};
+				};
+			};
+			buildConfigurationList = 9FA3B8CC230B47A1003E742A /* Build configuration list for PBXProject "NFL Draftipedia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FA3B8C8230B47A1003E742A;
+			productRefGroup = 9FA3B8D2230B47A1003E742A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FA3B8D0230B47A1003E742A /* NFL Draftipedia */,
+				9FA3B8E4230B47A2003E742A /* NFL DraftipediaTests */,
+				9FA3B8EF230B47A2003E742A /* NFL DraftipediaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FA3B8CF230B47A1003E742A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA3B8DF230B47A2003E742A /* LaunchScreen.storyboard in Resources */,
+				9FA3B8DC230B47A2003E742A /* Assets.xcassets in Resources */,
+				9FA3B8DA230B47A1003E742A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA3B8E3230B47A2003E742A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA3B8EE230B47A2003E742A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FA3B8CD230B47A1003E742A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA3B8D7230B47A1003E742A /* ViewController.swift in Sources */,
+				9FA3B8D5230B47A1003E742A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA3B8E1230B47A2003E742A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA3B8EA230B47A2003E742A /* NFL_DraftipediaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA3B8EC230B47A2003E742A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA3B8F5230B47A2003E742A /* NFL_DraftipediaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FA3B8E7230B47A2003E742A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FA3B8D0230B47A1003E742A /* NFL Draftipedia */;
+			targetProxy = 9FA3B8E6230B47A2003E742A /* PBXContainerItemProxy */;
+		};
+		9FA3B8F2230B47A2003E742A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FA3B8D0230B47A1003E742A /* NFL Draftipedia */;
+			targetProxy = 9FA3B8F1230B47A2003E742A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9FA3B8D8230B47A1003E742A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FA3B8D9230B47A1003E742A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9FA3B8DD230B47A2003E742A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FA3B8DE230B47A2003E742A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9FA3B8F7230B47A2003E742A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9FA3B8F8230B47A2003E742A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FA3B8FA230B47A2003E742A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZAMGA7E3H;
+				INFOPLIST_FILE = "NFL Draftipedia/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iOS-App.NFL-Draftipedia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FA3B8FB230B47A2003E742A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZAMGA7E3H;
+				INFOPLIST_FILE = "NFL Draftipedia/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iOS-App.NFL-Draftipedia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9FA3B8FD230B47A2003E742A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZAMGA7E3H;
+				INFOPLIST_FILE = "NFL DraftipediaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iOS-App.NFL-DraftipediaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NFL Draftipedia.app/NFL Draftipedia";
+			};
+			name = Debug;
+		};
+		9FA3B8FE230B47A2003E742A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZAMGA7E3H;
+				INFOPLIST_FILE = "NFL DraftipediaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iOS-App.NFL-DraftipediaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NFL Draftipedia.app/NFL Draftipedia";
+			};
+			name = Release;
+		};
+		9FA3B900230B47A2003E742A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZAMGA7E3H;
+				INFOPLIST_FILE = "NFL DraftipediaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iOS-App.NFL-DraftipediaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NFL Draftipedia";
+			};
+			name = Debug;
+		};
+		9FA3B901230B47A2003E742A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZAMGA7E3H;
+				INFOPLIST_FILE = "NFL DraftipediaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iOS-App.NFL-DraftipediaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NFL Draftipedia";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FA3B8CC230B47A1003E742A /* Build configuration list for PBXProject "NFL Draftipedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA3B8F7230B47A2003E742A /* Debug */,
+				9FA3B8F8230B47A2003E742A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FA3B8F9230B47A2003E742A /* Build configuration list for PBXNativeTarget "NFL Draftipedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA3B8FA230B47A2003E742A /* Debug */,
+				9FA3B8FB230B47A2003E742A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FA3B8FC230B47A2003E742A /* Build configuration list for PBXNativeTarget "NFL DraftipediaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA3B8FD230B47A2003E742A /* Debug */,
+				9FA3B8FE230B47A2003E742A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FA3B8FF230B47A2003E742A /* Build configuration list for PBXNativeTarget "NFL DraftipediaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA3B900230B47A2003E742A /* Debug */,
+				9FA3B901230B47A2003E742A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FA3B8C9230B47A1003E742A /* Project object */;
+}
