@@ -7,13 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9FA3B8D5230B47A1003E742A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B8D4230B47A1003E742A /* AppDelegate.swift */; };
-		9FA3B8D7230B47A1003E742A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B8D6230B47A1003E742A /* ViewController.swift */; };
-		9FA3B8DA230B47A1003E742A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA3B8D8230B47A1003E742A /* Main.storyboard */; };
-		9FA3B8DC230B47A2003E742A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA3B8DB230B47A2003E742A /* Assets.xcassets */; };
 		9FA3B8DF230B47A2003E742A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA3B8DD230B47A2003E742A /* LaunchScreen.storyboard */; };
 		9FA3B8EA230B47A2003E742A /* NFL_DraftipediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B8E9230B47A2003E742A /* NFL_DraftipediaTests.swift */; };
 		9FA3B8F5230B47A2003E742A /* NFL_DraftipediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B8F4230B47A2003E742A /* NFL_DraftipediaUITests.swift */; };
+		9FA3B903230B47D7003E742A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA3B902230B47D7003E742A /* Main.storyboard */; };
+		9FA3B908230B4853003E742A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B907230B4853003E742A /* AppDelegate.swift */; };
+		9FA3B90C230B4865003E742A /* DraftYearCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B909230B4865003E742A /* DraftYearCell.swift */; };
+		9FA3B90D230B4865003E742A /* DraftData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B90A230B4865003E742A /* DraftData.swift */; };
+		9FA3B90E230B4865003E742A /* DraftYearCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FA3B90B230B4865003E742A /* DraftYearCell.xib */; };
+		9FA3B920230B4871003E742A /* PlayerDetailViewSection1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B90F230B4870003E742A /* PlayerDetailViewSection1TableViewCell.swift */; };
+		9FA3B921230B4871003E742A /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B910230B4870003E742A /* SearchResult.swift */; };
+		9FA3B922230B4871003E742A /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FA3B911230B4870003E742A /* SearchResultCell.xib */; };
+		9FA3B923230B4871003E742A /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B912230B4870003E742A /* PlayerDetailViewController.swift */; };
+		9FA3B924230B4871003E742A /* PlayerDetailViewSection0TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B913230B4870003E742A /* PlayerDetailViewSection0TableViewCell.swift */; };
+		9FA3B925230B4871003E742A /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B914230B4870003E742A /* SearchResultCell.swift */; };
+		9FA3B926230B4871003E742A /* PlayerDetailViewSection2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B915230B4870003E742A /* PlayerDetailViewSection2TableViewCell.swift */; };
+		9FA3B928230B4871003E742A /* TeamDraftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B917230B4870003E742A /* TeamDraftTableViewCell.swift */; };
+		9FA3B929230B4871003E742A /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FA3B918230B4870003E742A /* NothingFoundCell.xib */; };
+		9FA3B92A230B4871003E742A /* TeamNameLookUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B919230B4870003E742A /* TeamNameLookUp.swift */; };
+		9FA3B92B230B4871003E742A /* PlayerDetailViewSection4TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B91A230B4870003E742A /* PlayerDetailViewSection4TableViewCell.swift */; };
+		9FA3B92C230B4871003E742A /* TeamDraftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B91B230B4870003E742A /* TeamDraftViewController.swift */; };
+		9FA3B92D230B4871003E742A /* NFLDraft.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9FA3B91C230B4870003E742A /* NFLDraft.txt */; };
+		9FA3B92E230B4871003E742A /* NFLDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B91D230B4870003E742A /* NFLDraft.swift */; };
+		9FA3B92F230B4871003E742A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B91E230B4871003E742A /* SearchViewController.swift */; };
+		9FA3B930230B4871003E742A /* PlayerDetailViewSection3TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3B91F230B4871003E742A /* PlayerDetailViewSection3TableViewCell.swift */; };
+		C6D23EB9230C405900604727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D23EB8230C405900604727 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +53,6 @@
 
 /* Begin PBXFileReference section */
 		9FA3B8D1230B47A1003E742A /* NFL Draftipedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NFL Draftipedia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FA3B8D4230B47A1003E742A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9FA3B8D6230B47A1003E742A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9FA3B8D9230B47A1003E742A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9FA3B8DB230B47A2003E742A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FA3B8DE230B47A2003E742A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FA3B8E0230B47A2003E742A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FA3B8E5230B47A2003E742A /* NFL DraftipediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NFL DraftipediaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +61,29 @@
 		9FA3B8F0230B47A2003E742A /* NFL DraftipediaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NFL DraftipediaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA3B8F4230B47A2003E742A /* NFL_DraftipediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFL_DraftipediaUITests.swift; sourceTree = "<group>"; };
 		9FA3B8F6230B47A2003E742A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FA3B902230B47D7003E742A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9FA3B906230B4852003E742A /* NFL Draftipedia-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NFL Draftipedia-Bridging-Header.h"; sourceTree = "<group>"; };
+		9FA3B907230B4853003E742A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9FA3B909230B4865003E742A /* DraftYearCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraftYearCell.swift; sourceTree = "<group>"; };
+		9FA3B90A230B4865003E742A /* DraftData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraftData.swift; sourceTree = "<group>"; };
+		9FA3B90B230B4865003E742A /* DraftYearCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DraftYearCell.xib; sourceTree = "<group>"; };
+		9FA3B90F230B4870003E742A /* PlayerDetailViewSection1TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewSection1TableViewCell.swift; sourceTree = "<group>"; };
+		9FA3B910230B4870003E742A /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		9FA3B911230B4870003E742A /* SearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
+		9FA3B912230B4870003E742A /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
+		9FA3B913230B4870003E742A /* PlayerDetailViewSection0TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewSection0TableViewCell.swift; sourceTree = "<group>"; };
+		9FA3B914230B4870003E742A /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		9FA3B915230B4870003E742A /* PlayerDetailViewSection2TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewSection2TableViewCell.swift; sourceTree = "<group>"; };
+		9FA3B917230B4870003E742A /* TeamDraftTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamDraftTableViewCell.swift; sourceTree = "<group>"; };
+		9FA3B918230B4870003E742A /* NothingFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
+		9FA3B919230B4870003E742A /* TeamNameLookUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamNameLookUp.swift; sourceTree = "<group>"; };
+		9FA3B91A230B4870003E742A /* PlayerDetailViewSection4TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewSection4TableViewCell.swift; sourceTree = "<group>"; };
+		9FA3B91B230B4870003E742A /* TeamDraftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamDraftViewController.swift; sourceTree = "<group>"; };
+		9FA3B91C230B4870003E742A /* NFLDraft.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NFLDraft.txt; sourceTree = "<group>"; };
+		9FA3B91D230B4870003E742A /* NFLDraft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFLDraft.swift; sourceTree = "<group>"; };
+		9FA3B91E230B4871003E742A /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9FA3B91F230B4871003E742A /* PlayerDetailViewSection3TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewSection3TableViewCell.swift; sourceTree = "<group>"; };
+		C6D23EB8230C405900604727 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +134,31 @@
 		9FA3B8D3230B47A1003E742A /* NFL Draftipedia */ = {
 			isa = PBXGroup;
 			children = (
-				9FA3B8D4230B47A1003E742A /* AppDelegate.swift */,
-				9FA3B8D6230B47A1003E742A /* ViewController.swift */,
-				9FA3B8D8230B47A1003E742A /* Main.storyboard */,
-				9FA3B8DB230B47A2003E742A /* Assets.xcassets */,
+				C6D23EB8230C405900604727 /* Assets.xcassets */,
+				9FA3B91D230B4870003E742A /* NFLDraft.swift */,
+				9FA3B91C230B4870003E742A /* NFLDraft.txt */,
+				9FA3B918230B4870003E742A /* NothingFoundCell.xib */,
+				9FA3B912230B4870003E742A /* PlayerDetailViewController.swift */,
+				9FA3B913230B4870003E742A /* PlayerDetailViewSection0TableViewCell.swift */,
+				9FA3B90F230B4870003E742A /* PlayerDetailViewSection1TableViewCell.swift */,
+				9FA3B915230B4870003E742A /* PlayerDetailViewSection2TableViewCell.swift */,
+				9FA3B91F230B4871003E742A /* PlayerDetailViewSection3TableViewCell.swift */,
+				9FA3B91A230B4870003E742A /* PlayerDetailViewSection4TableViewCell.swift */,
+				9FA3B910230B4870003E742A /* SearchResult.swift */,
+				9FA3B914230B4870003E742A /* SearchResultCell.swift */,
+				9FA3B911230B4870003E742A /* SearchResultCell.xib */,
+				9FA3B91E230B4871003E742A /* SearchViewController.swift */,
+				9FA3B917230B4870003E742A /* TeamDraftTableViewCell.swift */,
+				9FA3B91B230B4870003E742A /* TeamDraftViewController.swift */,
+				9FA3B919230B4870003E742A /* TeamNameLookUp.swift */,
+				9FA3B90A230B4865003E742A /* DraftData.swift */,
+				9FA3B909230B4865003E742A /* DraftYearCell.swift */,
+				9FA3B90B230B4865003E742A /* DraftYearCell.xib */,
+				9FA3B907230B4853003E742A /* AppDelegate.swift */,
+				9FA3B902230B47D7003E742A /* Main.storyboard */,
 				9FA3B8DD230B47A2003E742A /* LaunchScreen.storyboard */,
 				9FA3B8E0230B47A2003E742A /* Info.plist */,
+				9FA3B906230B4852003E742A /* NFL Draftipedia-Bridging-Header.h */,
 			);
 			path = "NFL Draftipedia";
 			sourceTree = "<group>";
@@ -135,6 +191,7 @@
 				9FA3B8CD230B47A1003E742A /* Sources */,
 				9FA3B8CE230B47A1003E742A /* Frameworks */,
 				9FA3B8CF230B47A1003E742A /* Resources */,
+				C6D23EBA230C4D2200604727 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -193,6 +250,7 @@
 				TargetAttributes = {
 					9FA3B8D0230B47A1003E742A = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					9FA3B8E4230B47A2003E742A = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -229,9 +287,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FA3B90E230B4865003E742A /* DraftYearCell.xib in Resources */,
+				9FA3B929230B4871003E742A /* NothingFoundCell.xib in Resources */,
+				9FA3B922230B4871003E742A /* SearchResultCell.xib in Resources */,
+				9FA3B92D230B4871003E742A /* NFLDraft.txt in Resources */,
+				9FA3B903230B47D7003E742A /* Main.storyboard in Resources */,
+				C6D23EB9230C405900604727 /* Assets.xcassets in Resources */,
 				9FA3B8DF230B47A2003E742A /* LaunchScreen.storyboard in Resources */,
-				9FA3B8DC230B47A2003E742A /* Assets.xcassets in Resources */,
-				9FA3B8DA230B47A1003E742A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +313,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C6D23EBA230C4D2200604727 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9FA3B8CD230B47A1003E742A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FA3B8D7230B47A1003E742A /* ViewController.swift in Sources */,
-				9FA3B8D5230B47A1003E742A /* AppDelegate.swift in Sources */,
+				9FA3B92F230B4871003E742A /* SearchViewController.swift in Sources */,
+				9FA3B90C230B4865003E742A /* DraftYearCell.swift in Sources */,
+				9FA3B90D230B4865003E742A /* DraftData.swift in Sources */,
+				9FA3B92E230B4871003E742A /* NFLDraft.swift in Sources */,
+				9FA3B92C230B4871003E742A /* TeamDraftViewController.swift in Sources */,
+				9FA3B92A230B4871003E742A /* TeamNameLookUp.swift in Sources */,
+				9FA3B923230B4871003E742A /* PlayerDetailViewController.swift in Sources */,
+				9FA3B924230B4871003E742A /* PlayerDetailViewSection0TableViewCell.swift in Sources */,
+				9FA3B92B230B4871003E742A /* PlayerDetailViewSection4TableViewCell.swift in Sources */,
+				9FA3B928230B4871003E742A /* TeamDraftTableViewCell.swift in Sources */,
+				9FA3B921230B4871003E742A /* SearchResult.swift in Sources */,
+				9FA3B920230B4871003E742A /* PlayerDetailViewSection1TableViewCell.swift in Sources */,
+				9FA3B930230B4871003E742A /* PlayerDetailViewSection3TableViewCell.swift in Sources */,
+				9FA3B925230B4871003E742A /* SearchResultCell.swift in Sources */,
+				9FA3B926230B4871003E742A /* PlayerDetailViewSection2TableViewCell.swift in Sources */,
+				9FA3B908230B4853003E742A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +389,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9FA3B8D8230B47A1003E742A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9FA3B8D9230B47A1003E742A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9FA3B8DD230B47A2003E742A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,8 +520,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8ZAMGA7E3H;
+				DEVELOPMENT_TEAM = 357725665U;
 				INFOPLIST_FILE = "NFL Draftipedia/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -441,6 +530,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "iOS-App.NFL-Draftipedia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NFL Draftipedia/NFL Draftipedia-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,8 +541,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8ZAMGA7E3H;
+				DEVELOPMENT_TEAM = 357725665U;
 				INFOPLIST_FILE = "NFL Draftipedia/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,6 +551,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "iOS-App.NFL-Draftipedia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NFL Draftipedia/NFL Draftipedia-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

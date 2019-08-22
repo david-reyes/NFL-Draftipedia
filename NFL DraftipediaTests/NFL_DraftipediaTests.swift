@@ -7,9 +7,9 @@
 //
 
 import XCTest
-@testable import NFL_Draftipedia
+@testable import NFLDraftipedia
 
-class NFL_DraftipediaTests: XCTestCase {
+class NFLDraftipediaTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

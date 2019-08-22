@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dOw-eV-QQT">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Main" id="BYZ-38-t0r" customClass="SearchViewController" customModule="NFL_Draftipedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wDA-vt-oVn">
+                                <rect key="frame" x="0.0" y="108" width="320" height="460"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="j3G-44-PLO"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="hJy-DN-1PX"/>
+                                </connections>
+                            </tableView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Fsp-qx-FQ5">
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="7By-vg-dCT"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xKs-t8-jF5">
+                                    <size key="itemSize" width="75" height="40"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="RBd-Sc-gmP"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="nXQ-2m-NzA"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wDA-vt-oVn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Nwq-DV-0zU"/>
+                            <constraint firstItem="Fsp-qx-FQ5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PSv-bk-B9P"/>
+                            <constraint firstItem="Fsp-qx-FQ5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SgD-4F-jpS"/>
+                            <constraint firstItem="wDA-vt-oVn" firstAttribute="top" secondItem="Fsp-qx-FQ5" secondAttribute="bottom" id="UeW-B1-jYZ"/>
+                            <constraint firstItem="Fsp-qx-FQ5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f9y-Rq-rBs"/>
+                            <constraint firstItem="wDA-vt-oVn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ogf-CY-sgw"/>
+                            <constraint firstItem="wDA-vt-oVn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="orh-IQ-EbA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mUC-u8-WR0"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Fsp-qx-FQ5" id="6HR-3J-Iai"/>
+                        <outlet property="searchDisplayController" destination="fN1-IE-f1d" id="Zlv-HY-r7G"/>
+                        <outlet property="tableView" destination="wDA-vt-oVn" id="8OK-qA-ktS"/>
+                        <segue destination="22B-aE-EbZ" kind="show" identifier="PlayerDetailSegue" id="XXq-qz-lkF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="MKZ-wD-oC4">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="rv2-sW-gce"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="DgR-s2-48U"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="GGd-5n-yhb"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="GuX-iL-7DR"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="fN1-IE-f1d">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="coU-IR-Swt"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="PCq-6X-0is"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="U86-fU-ubF"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="6tA-w7-rAL"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="941" y="110"/>
+        </scene>
+        <!--Team Draft View Controller-->
+        <scene sceneID="21A-3Q-sWn">
+            <objects>
+                <viewController storyboardIdentifier="TeamDraftViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="32v-9M-wOw" customClass="TeamDraftViewController" customModule="NFL_Draftipedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qSo-4B-4iB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gF3-Vt-56p">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TeamDraftTableViewCell" id="JUm-0Y-pd5" customClass="TeamDraftTableViewCell" customModule="NFL_Draftipedia" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JUm-0Y-pd5" id="3Y3-As-lYs">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draft year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOu-uf-ouT">
+                                                    <rect key="frame" x="15" y="11" width="76" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="76" id="7vP-Fg-253"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NFL Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Omr-HM-UGD">
+                                                    <rect key="frame" x="135" y="11" width="170" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Omr-HM-UGD" firstAttribute="leading" secondItem="oOu-uf-ouT" secondAttribute="trailing" constant="44" id="C08-lH-qgQ"/>
+                                                <constraint firstItem="oOu-uf-ouT" firstAttribute="top" secondItem="3Y3-As-lYs" secondAttribute="top" constant="11" id="D6j-vs-q2Y"/>
+                                                <constraint firstItem="Omr-HM-UGD" firstAttribute="top" secondItem="3Y3-As-lYs" secondAttribute="top" constant="11" id="bVO-LE-j13"/>
+                                                <constraint firstItem="oOu-uf-ouT" firstAttribute="leading" secondItem="3Y3-As-lYs" secondAttribute="leading" constant="15" id="vnb-Os-3YM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Omr-HM-UGD" secondAttribute="trailing" constant="15" id="63U-xs-3wk"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="draftYearLabel" destination="oOu-uf-ouT" id="n3K-rm-hui"/>
+                                            <outlet property="nflTeamLabel" destination="Omr-HM-UGD" id="W7g-YE-v0A"/>
+                                            <segue destination="22B-aE-EbZ" kind="show" identifier="PlayerDetailSegueFromTeam" id="mgn-EY-2Qg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gF3-Vt-56p" firstAttribute="leading" secondItem="WM2-RN-lPW" secondAttribute="leading" id="C8b-S5-qFc"/>
+                            <constraint firstItem="WM2-RN-lPW" firstAttribute="bottom" secondItem="gF3-Vt-56p" secondAttribute="bottom" id="NFD-5g-xkV"/>
+                            <constraint firstItem="WM2-RN-lPW" firstAttribute="trailing" secondItem="gF3-Vt-56p" secondAttribute="trailing" id="tIG-c1-vMp"/>
+                            <constraint firstItem="gF3-Vt-56p" firstAttribute="top" secondItem="WM2-RN-lPW" secondAttribute="top" id="vEc-K6-UAB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WM2-RN-lPW"/>
+                    </view>
+                    <connections>
+                        <outlet property="teamDraftTableView" destination="gF3-Vt-56p" id="dvw-Az-GQy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aX3-lt-1p2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937.5" y="845.07042253521126"/>
+        </scene>
+        <!--Player-->
+        <scene sceneID="uvN-HV-lmS">
+            <objects>
+                <viewController title="Player" id="22B-aE-EbZ" customClass="PlayerDetailViewController" customModule="NFL_Draftipedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uIB-tI-I5d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lir-jY-2PF">
+                                <rect key="frame" x="0.0" y="83" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Section0" rowHeight="82" id="bqO-UX-1LC" userLabel="Section0" customClass="PlayerDetailViewSection0TableViewCell" customModule="NFL_Draftipedia" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="82"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bqO-UX-1LC" id="GC9-HF-RTN">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="81.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gH9-7b-Hlq">
+                                                    <rect key="frame" x="16" y="11" width="129" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJT-m6-cyM">
+                                                    <rect key="frame" x="16" y="45" width="61" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RS-pI-lbX">
+                                                    <rect key="frame" x="81" y="45" width="222" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kJT-m6-cyM" firstAttribute="top" secondItem="gH9-7b-Hlq" secondAttribute="bottom" constant="13" id="7xl-Sx-Gq1"/>
+                                                <constraint firstAttribute="bottom" secondItem="3RS-pI-lbX" secondAttribute="bottom" constant="15.5" id="ITA-jT-nJ3"/>
+                                                <constraint firstAttribute="bottom" secondItem="kJT-m6-cyM" secondAttribute="bottom" constant="15.5" id="RN3-Tn-9aW"/>
+                                                <constraint firstItem="gH9-7b-Hlq" firstAttribute="leading" secondItem="GC9-HF-RTN" secondAttribute="leading" constant="16" id="XD4-jm-RWN"/>
+                                                <constraint firstItem="kJT-m6-cyM" firstAttribute="leading" secondItem="GC9-HF-RTN" secondAttribute="leading" constant="16" id="jv4-g0-g95"/>
+                                                <constraint firstItem="3RS-pI-lbX" firstAttribute="top" secondItem="gH9-7b-Hlq" secondAttribute="bottom" constant="13" id="lly-WD-ucg"/>
+                                                <constraint firstItem="kJT-m6-cyM" firstAttribute="top" secondItem="gH9-7b-Hlq" secondAttribute="bottom" constant="13" id="tcw-1H-vNI"/>
+                                                <constraint firstItem="gH9-7b-Hlq" firstAttribute="top" secondItem="GC9-HF-RTN" secondAttribute="top" constant="11" id="uF6-Ke-sVX"/>
+                                                <constraint firstItem="3RS-pI-lbX" firstAttribute="leading" secondItem="GC9-HF-RTN" secondAttribute="leading" constant="81" id="wT3-k0-cZd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="playerNameLabel" destination="gH9-7b-Hlq" id="f64-Tf-M31"/>
+                                            <outlet property="positionLabel" destination="kJT-m6-cyM" id="loJ-Ef-mTN"/>
+                                            <outlet property="teamLabel" destination="3RS-pI-lbX" id="Mtc-Sg-OQ8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Section1" rowHeight="82" id="Is4-GK-l0T" userLabel="Section1" customClass="PlayerDetailViewSection1TableViewCell" customModule="NFL_Draftipedia" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="110" width="320" height="82"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Is4-GK-l0T" id="xAE-EP-p8D">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="81.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draft Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5S-6F-Z82">
+                                                    <rect key="frame" x="15" y="11" width="77" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4c-EO-uxg">
+                                                    <rect key="frame" x="35" y="35" width="50" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overall Pick" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hha-3p-aRO">
+                                                    <rect key="frame" x="35" y="58" width="90" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hha-3p-aRO" firstAttribute="top" secondItem="Q4c-EO-uxg" secondAttribute="bottom" constant="2" id="50Y-kY-ndJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="hha-3p-aRO" secondAttribute="bottom" constant="2.5" id="Kiy-DQ-2T8"/>
+                                                <constraint firstItem="hha-3p-aRO" firstAttribute="leading" secondItem="xAE-EP-p8D" secondAttribute="leading" constant="35" id="Nte-Zu-BHR"/>
+                                                <constraint firstItem="Q4c-EO-uxg" firstAttribute="leading" secondItem="xAE-EP-p8D" secondAttribute="leading" constant="35" id="UnV-yn-Pho"/>
+                                                <constraint firstItem="f5S-6F-Z82" firstAttribute="leading" secondItem="xAE-EP-p8D" secondAttribute="leading" constant="15" id="qLZ-Ge-wux"/>
+                                                <constraint firstItem="Q4c-EO-uxg" firstAttribute="top" secondItem="f5S-6F-Z82" secondAttribute="bottom" constant="3" id="rwq-R4-Q2H"/>
+                                                <constraint firstItem="f5S-6F-Z82" firstAttribute="top" secondItem="xAE-EP-p8D" secondAttribute="top" constant="11" id="uiu-0U-qF7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="draftOverallPickLabel" destination="hha-3p-aRO" id="FW0-9S-jU0"/>
+                                            <outlet property="draftRoundLabel" destination="Q4c-EO-uxg" id="SBc-1H-BMH"/>
+                                            <outlet property="draftYearLabel" destination="f5S-6F-Z82" id="63L-lF-ERm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Section2" rowHeight="96" id="suW-Iv-Lff" customClass="PlayerDetailViewSection2TableViewCell" customModule="NFL_Draftipedia" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="192" width="320" height="96"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="suW-Iv-Lff" id="8SN-D9-8ry">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="95.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Born" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLM-m1-Bz5">
+                                                    <rect key="frame" x="15" y="11" width="36.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvQ-dv-j83">
+                                                    <rect key="frame" x="35" y="34.5" width="64.5" height="25"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="birthplace" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGl-Tf-i9a">
+                                                    <rect key="frame" x="35" y="61.5" width="77.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="jGl-Tf-i9a" firstAttribute="top" secondItem="wvQ-dv-j83" secondAttribute="bottom" constant="2" id="CAw-TP-bGO"/>
+                                                <constraint firstItem="wvQ-dv-j83" firstAttribute="top" secondItem="QLM-m1-Bz5" secondAttribute="bottom" constant="3" id="UYo-bA-w8p"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="jGl-Tf-i9a" secondAttribute="bottom" constant="2.5" id="VRd-bO-d6K"/>
+                                                <constraint firstItem="QLM-m1-Bz5" firstAttribute="leading" secondItem="8SN-D9-8ry" secondAttribute="leading" constant="15" id="bLI-yn-YUX"/>
+                                                <constraint firstItem="wvQ-dv-j83" firstAttribute="leading" secondItem="8SN-D9-8ry" secondAttribute="leading" constant="35" id="dkC-cn-elC"/>
+                                                <constraint firstItem="jGl-Tf-i9a" firstAttribute="leading" secondItem="8SN-D9-8ry" secondAttribute="leading" constant="35" id="htk-wj-fLU"/>
+                                                <constraint firstItem="QLM-m1-Bz5" firstAttribute="top" secondItem="8SN-D9-8ry" secondAttribute="top" priority="999" constant="11" id="vde-hO-Iu5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bornDateLabel" destination="wvQ-dv-j83" id="I34-rT-Cj3"/>
+                                            <outlet property="bornLabel" destination="QLM-m1-Bz5" id="XmW-a0-CKI"/>
+                                            <outlet property="bornTownLabel" destination="jGl-Tf-i9a" id="w9v-kY-ZuH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Section3" rowHeight="103" id="e1e-g5-Mee" customClass="PlayerDetailViewSection3TableViewCell" customModule="NFL_Draftipedia" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="288" width="320" height="103"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e1e-g5-Mee" id="UVy-Uc-fgh">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="102.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="High School" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwz-nx-nnA">
+                                                    <rect key="frame" x="15" y="11" width="93" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="HS City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RhU-KG-NJe">
+                                                    <rect key="frame" x="35" y="34.5" width="58" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HS State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ue6-X7-pHs">
+                                                    <rect key="frame" x="35" y="57.5" width="68" height="32"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ue6-X7-pHs" firstAttribute="leading" secondItem="UVy-Uc-fgh" secondAttribute="leading" constant="35" id="Dsd-zd-qH3"/>
+                                                <constraint firstItem="Ue6-X7-pHs" firstAttribute="top" secondItem="RhU-KG-NJe" secondAttribute="bottom" constant="2" id="RhM-wB-uyY"/>
+                                                <constraint firstItem="Gwz-nx-nnA" firstAttribute="top" secondItem="UVy-Uc-fgh" secondAttribute="top" constant="11" id="Td0-5F-S2r"/>
+                                                <constraint firstItem="RhU-KG-NJe" firstAttribute="leading" secondItem="UVy-Uc-fgh" secondAttribute="leading" constant="35" id="hsb-ug-eAe"/>
+                                                <constraint firstItem="Gwz-nx-nnA" firstAttribute="leading" secondItem="UVy-Uc-fgh" secondAttribute="leading" constant="15" id="lYe-90-Qxf"/>
+                                                <constraint firstItem="RhU-KG-NJe" firstAttribute="top" secondItem="Gwz-nx-nnA" secondAttribute="bottom" constant="3" id="mGh-1E-JEJ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Ue6-X7-pHs" secondAttribute="bottom" constant="2.5" id="nvC-7k-7H7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="highSchoolCityLabel" destination="RhU-KG-NJe" id="6K7-Ja-gS1"/>
+                                            <outlet property="highSchoolLabel" destination="Gwz-nx-nnA" id="sZW-A8-OHm"/>
+                                            <outlet property="highSchoolStateLabel" destination="Ue6-X7-pHs" id="HdU-zC-5sQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Section4" rowHeight="94" id="tLs-6I-Nub" customClass="PlayerDetailViewSection4TableViewCell" customModule="NFL_Draftipedia" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="391" width="320" height="94"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tLs-6I-Nub" id="R2D-XZ-6IB">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="93.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="College" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQM-1A-G60">
+                                                    <rect key="frame" x="15" y="11" width="58" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmu-RR-Eg4">
+                                                    <rect key="frame" x="35" y="34.5" width="34" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfi-Cf-cz0">
+                                                    <rect key="frame" x="83" y="34.5" width="53" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Pfi-Cf-cz0" firstAttribute="centerY" secondItem="vmu-RR-Eg4" secondAttribute="centerY" id="1Sy-qv-Y5g"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="vmu-RR-Eg4" secondAttribute="bottom" constant="27.5" id="Fhy-lg-okU"/>
+                                                <constraint firstItem="iQM-1A-G60" firstAttribute="top" secondItem="R2D-XZ-6IB" secondAttribute="top" constant="11" id="Nyx-9H-88v"/>
+                                                <constraint firstItem="iQM-1A-G60" firstAttribute="leading" secondItem="R2D-XZ-6IB" secondAttribute="leading" constant="15" id="POG-0e-4ym"/>
+                                                <constraint firstItem="Pfi-Cf-cz0" firstAttribute="leading" secondItem="R2D-XZ-6IB" secondAttribute="leading" constant="83" id="ZtJ-sB-lr2"/>
+                                                <constraint firstItem="vmu-RR-Eg4" firstAttribute="leading" secondItem="R2D-XZ-6IB" secondAttribute="leading" constant="35" id="e8O-7v-4Ug"/>
+                                                <constraint firstItem="vmu-RR-Eg4" firstAttribute="top" secondItem="iQM-1A-G60" secondAttribute="bottom" constant="3" id="ntC-MR-ewG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collegeLabel" destination="iQM-1A-G60" id="MOE-HT-x3n"/>
+                                            <outlet property="collegeYearLabel" destination="vmu-RR-Eg4" id="tha-uy-bA5"/>
+                                            <outlet property="schoolNameLabel" destination="Pfi-Cf-cz0" id="dG4-Jt-v58"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lir-jY-2PF" firstAttribute="top" secondItem="GTo-y1-oaI" secondAttribute="top" id="55y-Aa-rlX"/>
+                            <constraint firstItem="lir-jY-2PF" firstAttribute="trailing" secondItem="GTo-y1-oaI" secondAttribute="trailing" id="Vfx-cl-Vf7"/>
+                            <constraint firstItem="lir-jY-2PF" firstAttribute="leading" secondItem="GTo-y1-oaI" secondAttribute="leading" id="cwb-Qe-8yM"/>
+                            <constraint firstItem="lir-jY-2PF" firstAttribute="bottom" secondItem="GTo-y1-oaI" secondAttribute="bottom" id="u4y-xR-WqM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GTo-y1-oaI"/>
+                    </view>
+                    <connections>
+                        <outlet property="playerDetailTableView" destination="lir-jY-2PF" id="ZT7-aJ-r1D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cKH-yJ-dK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1743.75" y="109.85915492957747"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bzV-i8-xc3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dOw-eV-QQT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jYW-Ru-5iJ">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8Sx-x4-Zfc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gau-Ju-qwa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="109.85915492957747"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="XXq-qz-lkF"/>
+    </inferredMetricsTieBreakers>
+</document>
