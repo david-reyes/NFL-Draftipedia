@@ -9,14 +9,9 @@
 import UIKit
 
 class PlayerDetailViewSection3TableViewCell: UITableViewCell {
-    
     @IBOutlet weak var highSchoolLabel: UILabel!
-    
     @IBOutlet weak var highSchoolCityLabel: UILabel!
-    
     @IBOutlet weak var highSchoolStateLabel: UILabel!
-    
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

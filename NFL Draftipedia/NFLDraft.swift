@@ -64,7 +64,6 @@ struct HighSchool: Decodable {
     let name: String?
     let city: String?
     let state: String?
-    
     enum CodingKeys: String, CodingKey {
         case name
         case city
@@ -77,7 +76,6 @@ struct College: Decodable {
     let firstSchool: String?
     let team: String
     let position: String
-    
     enum CodingKeys: String, CodingKey {
         case secondSchool
         case firstSchool
@@ -90,7 +88,6 @@ struct Draft: Codable {
     let year: Int
     let round: Int
     let overallPick: Int
-    
     enum CodingKeys: String, CodingKey {
         case year
         case round
@@ -101,7 +98,6 @@ struct Draft: Codable {
 struct NFL: Decodable {
     let team: String
     let position: String
-    
     enum CodingKeys: String, CodingKey {
         case team
         case position

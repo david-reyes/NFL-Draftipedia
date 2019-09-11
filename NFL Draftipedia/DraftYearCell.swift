@@ -11,5 +11,4 @@ import UIKit
 class DraftYearCell: UICollectionViewCell {
 
     @IBOutlet weak var draftYearLabel: UILabel!
-    
 }

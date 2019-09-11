@@ -11,18 +11,13 @@ import UIKit
 class PlayerDetailViewController: UIViewController {
 
     @IBOutlet weak var playerDetailTableView: UITableView!
-    
     var player: PlayerValues!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("\(String(describing: player!.firstName))")
-        
         playerDetailTableView.dataSource = self
         playerDetailTableView.delegate = self
     }
-    
-    
 }
 
 extension PlayerDetailViewController: UITableViewDataSource, UITableViewDelegate {
@@ -30,12 +25,11 @@ extension PlayerDetailViewController: UITableViewDataSource, UITableViewDelegate
      func numberOfSections(in tableView: UITableView) -> Int {
         return 5
     }
-    
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if (indexPath.section == 0){
+        if (indexPath.section == 0) {
             let teamDictionary=TeamNameLookUp().teamDictionary
             guard let cellSection0 = tableView.dequeueReusableCell(withIdentifier: "Section0") as? PlayerDetailViewSection0TableViewCell else {
                 return UITableViewCell()
@@ -56,7 +50,6 @@ extension PlayerDetailViewController: UITableViewDataSource, UITableViewDelegate
             cellSection1.draftOverallPickLabel.text = "Overall Pick: \(player.draft.overallPick)"
             return cellSection1
         }
-        
         if (indexPath.section == 2) {
             var formattedDOB: String
             let rawDOB = player.born ?? "DOB"
@@ -73,8 +66,7 @@ extension PlayerDetailViewController: UITableViewDataSource, UITableViewDelegate
                 dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
                 formattedDOB=dateFormatter.string(from: dobDate)
                 print(formattedDOB)
-            }
-            else {
+            } else {
                 formattedDOB = " "
             }
             guard let cellSection2 = tableView.dequeueReusableCell(withIdentifier: "Section2") as? PlayerDetailViewSection2TableViewCell else {
@@ -85,17 +77,16 @@ extension PlayerDetailViewController: UITableViewDataSource, UITableViewDelegate
             cellSection2.bornTownLabel.text = (player.birthplace?.city ?? "Birth City") + ", " + (player.birthplace?.state ?? "Birth State")
             return cellSection2
         }
-        if (indexPath.section == 3){
+        if (indexPath.section == 3) {
             guard let cellSection3 = tableView.dequeueReusableCell(withIdentifier: "Section3") as? PlayerDetailViewSection3TableViewCell else {
                 return UITableViewCell()
             }
-            
             cellSection3.highSchoolLabel.text = "High school"
             cellSection3.highSchoolCityLabel.text = (player.highSchool?.name ?? "High School")
             cellSection3.highSchoolStateLabel.text = (player.highSchool?.city ?? "High School City") + ", " + (player.highSchool?.state ?? "High School State")
             return cellSection3
         }
-        if (indexPath.section == 4){
+        if (indexPath.section == 4) {
             guard let cellSection4 = tableView.dequeueReusableCell(withIdentifier: "Section4") as? PlayerDetailViewSection4TableViewCell else {
                 return UITableViewCell()
             }
@@ -106,9 +97,7 @@ extension PlayerDetailViewController: UITableViewDataSource, UITableViewDelegate
         }
         return UITableViewCell()
     }
-    
-    func tableView(_ tableView: UITableView,
-                   didSelectRowAt indexPath: IndexPath){
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.navigationController?.popToRootViewController(animated: true)
         /*
         if let searchViewController=self.navigationController?.topViewController as? SearchViewController {
@@ -118,8 +107,5 @@ extension PlayerDetailViewController: UITableViewDataSource, UITableViewDelegate
                 animated: true)
         }
  */
-            
-        
     }
 }
-

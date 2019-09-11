@@ -17,5 +17,4 @@ class SearchResult {
     var nflPosition = ""
     var collegePositon = ""
     var overallPick = ""
-        
 }

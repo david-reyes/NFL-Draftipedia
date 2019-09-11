@@ -9,13 +9,9 @@
 import UIKit
 
 class PlayerDetailViewSection4TableViewCell: UITableViewCell {
-    
     @IBOutlet weak var collegeLabel: UILabel!
-    
     @IBOutlet weak var collegeYearLabel: UILabel!
-    
     @IBOutlet weak var schoolNameLabel: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -8,18 +8,14 @@
 
 import Foundation
 
-class TeamNameLookUp{
-    
-    var teamDictionary:[String:String] = [:]
-    
-    var teamDraftLookUp: [Int:[String:[Player]]]=[Int:[String:[Player]]]()
-    
-    init(){
+class TeamNameLookUp {
+    var teamDictionary: [String: String] = [:]
+    var teamDraftLookUp: [Int: [String: [Player]]]=[Int: [String: [Player]]]()
+    init() {
         makeTeamDictionary()
-        makeTeamLookUp()
+//        makeTeamLookUp()
     }
-    
-    func makeTeamDictionary(){
+    func makeTeamDictionary() {
         teamDictionary["AZ"] = "Arizona Cardinals"
         teamDictionary["ATL"] = "Atlanta Falcons"
         teamDictionary["BAL"] = "Baltimore Ravens"
@@ -52,14 +48,13 @@ class TeamNameLookUp{
         teamDictionary["TB"] = "Tampa Bay Buccaneers"
         teamDictionary["TEN"] = "Tennessee Titans"
         teamDictionary["WAS"] = "Washington Redskins"
-        
+//Legacy Teams
         teamDictionary["STL"] = "St. Louis Rams"
         teamDictionary["SD"] = "San Diego Chargers"
         teamDictionary["RAI"] = "Los Angeles Raiders"
     }
-    
-    func makeTeamLookUp()->[String:[Player]]{
-        var teamDraftLookUp=[String:[Player]]()
+    func makeTeamLookUp() -> [String: [Player]] {
+        var teamDraftLookUp=[String: [Player]]()
         teamDraftLookUp["AZ"] = [Player]()
         teamDraftLookUp["ATL"] = [Player]()
         teamDraftLookUp["BAL"] = [Player]()
@@ -98,5 +93,4 @@ class TeamNameLookUp{
         return teamDraftLookUp
 
     }
-    
 }

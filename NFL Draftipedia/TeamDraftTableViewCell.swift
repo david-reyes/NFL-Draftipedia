@@ -9,12 +9,8 @@
 import UIKit
 
 class TeamDraftTableViewCell: UITableViewCell {
-    
-    
     @IBOutlet weak var draftYearLabel: UILabel!
-    
     @IBOutlet weak var nflTeamLabel: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

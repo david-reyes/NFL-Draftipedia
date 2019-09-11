@@ -12,12 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
-    //MARK: - Helper Methods
+// MARK: - Helper Methods
     func customizeAppearance() {
 //        let barTintColor = UIColor(red: 20/255, green: 160/255, blue: 160/255, alpha: 1)
-        //UISearchBar.appearance().barTintColor = barTintColor
-        
+//        UISearchBar.appearance().barTintColor = barTintColor
         window!.tintColor = UIColor(red: 10/255, green: 80/255, blue: 80/255, alpha: 1)
     }
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

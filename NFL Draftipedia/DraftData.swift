@@ -8,18 +8,18 @@
 
 import Foundation
 
-class DraftData{
+class DraftData {
     var filteredPlayers = [Player]()
     var searchResults: [NFLDraftYear] = []
     var draftHistory: [NFLDraftYear] = []
     var allDrafts: [NFLDraftHistory] = []
-    var draftYear:[Int] = [2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009]
+    var draftYear: [Int] = [2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009]
     var selectedDraft: NFLDraftYear?
     var selectedPlayer: PlayerValues?
     let teamNameLookup=TeamNameLookUp()
-    var teamDraftLookUp: [Int : [String : [Player]]]=[ : ]
+    var teamDraftLookUp: [Int: [String: [Player]]] = [:]
     var allPlayers=[Player]()
-    init(){
+    init() {
         loadDraftData()
     }
     func loadDraftData() {
@@ -65,7 +65,7 @@ class DraftData{
     func filterPlayers(searchText: String) {
         filteredPlayers=allPlayers.filter({ (entry: Player) -> Bool in
             let playerEntry=entry.player
-            let fullName=(playerEntry?.firstName.lowercased() ?? "")+" "+(playerEntry?.lastName.lowercased() ?? "")
+            let fullName=(playerEntry?.firstName.lowercased() ?? "") + " " + (playerEntry?.lastName.lowercased() ?? "")
             return fullName.lowercased().contains(searchText)
         })
     }

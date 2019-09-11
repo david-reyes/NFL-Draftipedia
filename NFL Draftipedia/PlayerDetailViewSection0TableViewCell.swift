@@ -9,14 +9,9 @@
 import UIKit
 
 class PlayerDetailViewSection0TableViewCell: UITableViewCell {
-    
     @IBOutlet weak var playerNameLabel: UILabel!
-    
     @IBOutlet weak var positionLabel: UILabel!
-    
     @IBOutlet weak var teamLabel: UILabel!
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

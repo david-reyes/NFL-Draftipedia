@@ -27,7 +27,6 @@ class SearchViewController: UIViewController {
         collectionView.dataSource = self
         var cellNib = UINib(nibName: TableViewCellIdentifiers.searchResultCell, bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: TableViewCellIdentifiers.searchResultCell)
-        
         cellNib = UINib(nibName: TableViewCellIdentifiers.nothingFoundCell, bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: TableViewCellIdentifiers.nothingFoundCell)
         let collectionCellNib = UINib(nibName: "DraftYearCell", bundle: nil)
@@ -62,11 +61,10 @@ class SearchViewController: UIViewController {
      present the view controller
      do setup for view controller
      */
-    func updateYearsVisibility(){
+    func updateYearsVisibility() {
         if isFiltering() {
             collectionView.isHidden=true
-        }
-        else{
+        } else {
             collectionView.isHidden=false
         }
     }
@@ -78,7 +76,7 @@ class SearchViewController: UIViewController {
         }
     }
 }
-extension SearchViewController: UISearchResultsUpdating{
+extension SearchViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         let searchText=searchController.searchBar.text ?? ""
         let lowerCasedSearchText=searchText.lowercased()
@@ -123,9 +121,9 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
             cell.teamNameButton.setTitle(display[indexPath.row].player.nfl.team, for: UIControl.State.normal)
             cell.teamNameButton.tag=indexPath.row
             cell.delegate = self as? SearchResultCellDelegate
-            cell.teamDraftSegue={() -> Void in
+            cell.teamDraftSegue = {() -> Void in
                 //will have gotten tag from sender in cell
-                //will get team using tag as inde for data model of UITableView
+                //will get team using tag as index for data model of UITableView
                 //will perform some looping to get the data set of players from that year for that team
                 //will segue
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -139,13 +137,12 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
                 vc.teamName=self.draftData.teamNameLookup.teamDictionary[display[indexPath.row].player.nfl.team] ?? "Team Name"
                 vc.year=display[indexPath.row].player.draft.year
                 self.navigationController!.pushViewController(vc, animated: true)
-                
             }
             return cell
         }
     }
 }
-extension SearchViewController:UICollectionViewDataSource {
+extension SearchViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return draftData.draftYear.count
     }

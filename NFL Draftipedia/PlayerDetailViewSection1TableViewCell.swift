@@ -11,11 +11,8 @@ import UIKit
 class PlayerDetailViewSection1TableViewCell: UITableViewCell {
 
     @IBOutlet weak var draftYearLabel: UILabel!
-    
     @IBOutlet weak var draftRoundLabel: UILabel!
-    
     @IBOutlet weak var draftOverallPickLabel: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

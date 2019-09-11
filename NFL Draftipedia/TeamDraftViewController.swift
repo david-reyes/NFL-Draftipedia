@@ -9,19 +9,15 @@
 import UIKit
 
 class TeamDraftViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
     @IBOutlet weak var teamDraftTableView: UITableView!
-    
     var teamDraft=[Player]()
     var teamName="Team Name"
     var year: Int=0
     var selectedPlayer: Player?
-   
     override func viewDidLoad() {
         super.viewDidLoad()
         teamDraftTableView.dataSource=self
         teamDraftTableView.delegate=self
-        
         let cellNib = UINib(nibName: TableViewCellIdentifiers.searchResultCell, bundle: nil)
         teamDraftTableView.register(cellNib, forCellReuseIdentifier: TableViewCellIdentifiers.searchResultCell)
         teamDraftTableView.reloadData()
@@ -56,7 +52,7 @@ class TeamDraftViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     func tableView(_ tableView: UITableView,
                    willSelectRowAt indexPath: IndexPath) -> IndexPath? {
-        if indexPath.row==0{
+        if indexPath.row==0 {
             return nil
         }
         return indexPath
